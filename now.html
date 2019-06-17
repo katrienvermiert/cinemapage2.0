@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Cinefile</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Films</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="now.html">Nu in de bioscoop</a>
+              <a class="dropdown-item" href="soon.html">Wordt verwacht</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html">Programma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#buy">Ticket & go</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="collapse col-12" id="buy">
+      <form action="">
+        <div>
+          <label for="date">DAG : </label>
+          <select name="date" id="date">
+            <option value="" class="date" selected>Selecteer</option>
+            <option value="1">Maandag 10 juni</option>
+            <option value="2">Dinsdag 11 juni</option>
+            <option value="3">Woensdag 12 juni</option>
+            <option value="4">Donderdag 13 juni</option>
+            <option value="5">Vrijdag 14 juni</option>
+            <option value="6">Zaterdag 15 juni</option>
+            <option value="7">Zondag 16 juni</option>
+          </select>
+        </div>
+        <div>
+          <label for="film">FILM: </label>
+          <select name="film" id="film">
+            <option value="" selected>Selecteer</option>
+            <option value="1">Gloria Bell</option>
+            <option value="2">A dog's journey</option>
+            <option value="3">Aladdin NV</option>
+            <option value="4">Aladdin OV</option>
+            <option value="5">Avengers: Endgame</option>
+            <option value="6">Corgi</option>
+            <option value="7">Detective Pikachu NV</option>
+            <option value="8">Detective Pikachu OV</option>
+            <option value="9">Dumbo NV</option>
+            <option value="10">Godzilla II: King of the monsters</option>
+            <option value="11">Greta</option>
+            <option value="12">John Wick 3</option>
+            <option value="13">Ma</option>
+            <option value="14">Rocketman</option>
+            <option value="15">Biggest little farm</option>
+            <option value="16">Wonder park</option>
+            <option value="17">X-men: Dark Phoenix 2D</option>
+            <option value="18">X-men: Dark Phoenix 3D</option>
+            <option value="19">The evil dead</option>
+            <option value="20">Friday the 13th</option>
+            <option value="21">Halloween</option>
+            <option value="22">The last house on the left</option>
+            <option value="23">Poltergeist/option>
+            <option value="24">Sleepaway camp</option>
+            <option value="25">Suspiria</option>
+            <option value="26">Black christmas</option>
+          </select>
+        </div>
+        <div>
+          <label for="time">TIJD: </label>
+          <select name="time" id="time">
+            <option value="" selected>Selecteer</option>
+            <option value="1">14u</option>
+            <option value="2">17u</option>
+            <option value="3">20u</option>
+            <option value="4">23u</option>
+          </select>
+        </div>
+        <div>
+          <button class="btn" type="submit">Buy</button>
+        </div>
+
+      </form>
+    </div>
+
+    <table id="table" class="table ">
+      <tbody>
+        <tr>
+          <th id="head">
+            <img src="images/gloria.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">60+ Gloria Bell:</h3>
+            <span>Duur: </span> 102 minuten <br>
+            <span>Genre: </span> Drama, Romantiek <br><br>
+            Gloria is een vrijgevochten vrouw van in de vijftig. Hoewel ze eenzaam is, haalt ze het beste uit haar
+            situatie en vult ze haar nachten op feesten voor alleenstaande volwassenen in Los Angeles, steeds op zoek
+            naar de liefde. Haar fragiele geluk verandert, wanneer ze Arnold ontmoet en ze zich vervolgens helemaal
+            geeft in hun intense relatie.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6902696/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Sebastián Lelio</span></td>
+          <td id="info2">Cast: <span id="cast">Julianne Moore, Alanna Ubach, Michael Cera, Sean Astin</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/dogjourney.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">A dog's journey:</h3>
+            <span>Duur: </span> 108 minuten <br>
+            <span>Genre: </span> Familiefilm <br><br>
+            In 'A Dog's Journey' vindt een hond de betekenis van zijn eigen bestaan door de levens van de mensen die hij
+            ontmoet.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt8385474/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Gail Mancuso</span></td>
+          <td id="info2">Cast: <span id="cast">Dennis Quaid, Betty Gilpin, Josh Gad, Abby Ryder Fortson</span></td>
+          <cast>
+        <tr>
+          <th id="head">
+            <img src="images/aladdin2.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Aladdin NV:</h3>
+            <span>Duur: </span> 128 minuten <br>
+            <span>Genre: </span> Avontuur, Fantasie, Romantiek <br><br>
+            De arme jongen Aladdin bevrijdt een geest uit een lamp en wordt daarmee de meest machtige jongen van het
+            land. Met hulp van de geest probeert Aladdin het hart van de prinses te veroveren terwijl zij boze oom uit
+            alle macht zich de lamp probeert toe te eigenen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6139732/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Guy Ritchie</span></td>
+          <td id="info2">Cast: <span id="cast">Mena Massoud, Naomi Scott, Will Smith, Marwan Kenzari</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/aladdin2.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Aladdin OV:</h3>
+            <span>Duur: </span> 128 minuten <br>
+            <span>Genre: </span> Avontuur, Fantasie, Romantiek <br><br>
+            De arme jongen Aladdin bevrijdt een geest uit een lamp en wordt daarmee de meest machtige jongen van het
+            land. Met hulp van de geest probeert Aladdin het hart van de prinses te veroveren terwijl zij boze oom uit
+            alle macht zich de lamp probeert toe te eigenen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6139732/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Guy Ritchie</span></td>
+          <td id="info2">Cast: <span id="cast">Mena Massoud, Naomi Scott, Will Smith, Marwan Kenzari</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/avengers.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Avengers Endgame:</h3>
+            <span>Duur: </span> 182 minuten <br>
+            <span>Genre: </span> Actie, Avontuur, Sci-fi <br><br>
+            Na de gebeurtenissen in 'Infinity War' hebben de superhelden een grote tik gekregen.
+            Hun gezamenlijke vijand Thanos is erin geslaagd om alle Infinity Stones te bemachtigen
+            en heeft daarbij de helft van al het leven uitgewist. De overlevende helden, en met name de Avengers,
+            hebben echter weinig tijd om te rouwen om hun vrienden en familie.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt4154796/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Joe Russo, Anthony Russo</span></td>
+          <td id="info2">Cast: <span id="cast">Robert Downey Jr., Chris Evans, Chris Hemsworth, Mark Ruffalo</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/corgi.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Corgi:</h3>
+            <span>Duur: </span> 85 minuten <br>
+            <span>Genre: </span> Animatie, familiefilm, komedie <br><br>
+            Corgi Rex is de meest geliefde hond van het Britse koningshuis en ondanks dat hij zich niet altijd aan de
+            regels houdt is hij lievelingetje van de Koningin. Wanneer Rex door de andere, jaloerse corgi’s het paleis
+            uit wordt gejaagd en niet terugkomt is de paniek groot. Iedereen denkt dat hij de koude winter buiten de
+            paleismuren niet zal overleven! Rex zet alles op alles om thuis te komen, maar onderweg wordt hij aangezien
+            voor een zwerfhond en naar een hondenkennel gebracht. Hier gelooft niemand dat Rex een koninklijk hondje is
+            en hij moet zich zien te redden tussen nieuwe vrienden en vijanden met wie hij spannende avonturen beleeft.
+            Zo moet Rex het opnemen tegen de sterke en intimiderende Tyson, wordt hij verliefd op de stoere Wanda en
+            leert hij zichzelf beter kennen dan ooit. Zal Rex zijn weg terug naar het paleis nog vinden? En zijn ze hem
+            daar dan nog niet vergeten?
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6563576/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Ben Stassen</span> </td>
+          <td id="info2">Cast: <span id="cast">Julie Walters, Jack Whitehall, Sheridan Smith, Ray Winstone</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/detectivepikachu.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Detective Pikachu NV:</h3>
+            <span>Duur: </span> 106 minuten <br>
+            <span>Genre: </span> Familiefilm, fantasy, komedie <br><br>
+            Tim Goodmans vader wordt op mysterieuze wijze ontvoerd. Op een dag ontmoet Tim een Pikachu, een eigenaardig
+            pratend wezen dat niet zo sterk en wendbaar is als andere Pikachu's, maar claimt een uitermate goede
+            rechercheur te zijn. Samen beginnen ze aan een missie om Tims vader te vinden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt5884052/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Rob Letterman</span> </td>
+          <td id="info2">Cast: <span id="cast">Ryan Reynolds, Justice Smith, Kathryn Newton, Bill Nighy</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/detectivepikachu.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Detective Pikachu:</h3>
+            <span>Duur: </span> 106 minuten <br>
+            <span>Genre: </span> Familiefilm, fantasy, komedie <br><br>
+            Tim Goodmans vader wordt op mysterieuze wijze ontvoerd. Op een dag ontmoet Tim een Pikachu, een eigenaardig
+            pratend wezen dat niet zo sterk en wendbaar is als andere Pikachu's, maar claimt een uitermate goede
+            rechercheur te zijn. Samen beginnen ze aan een missie om Tims vader te vinden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt5884052/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Rob Letterman</span> </td>
+          <td id="info2">Cast: <span id="cast">Ryan Reynolds, Justice Smith, Kathryn Newton, Bill Nighy</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/dumbonv.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Dumbo NV:</h3>
+            <span>Duur: </span> 112 minuten <br>
+            <span>Genre: </span> Avontuur, familiefilm, fantasy <br><br>
+            Circus-eigenaar Max Medici vraagt voormalige ster Holt Farrier en zijn kinderen Milly en Joe om te zorgen
+            voor een pasgeboren olifant, wiens oversized oren hem een lachertje maken in een al worstelend circus. Maar
+            wanneer ze ontdekken dat Dumbo kan vliegen, maakt het circus een ongelooflijke comeback, wat spoedig
+            ondernemer V.A. Vandevere ten ore komt, die vervolgens de bijzondere olifant rekruteert voor zijn nieuwste,
+            groter dan levensgrote entertainment onderneming, Dreamland. Dumbo zweeft naar nieuwe hoogten naast de
+            charmante en spectaculaire lucht acrobaat, Colette Marchant, tot Holt ontdekt dat Dreamland vol zit met
+            duistere geheimen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt3861390/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Tim Burton</span> </td>
+          <td id="info2">Cast: <span id="cast">Colin Farrell, Michael Keaton, Danny DeVito, Eva Green</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/godzilla.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Godzilla II: King of the monsters:</h3>
+            <span>Duur: </span> 132 minuten <br>
+            <span>Genre: </span> Actie, sci-fi, thriller <br><br>
+            'Godzilla: King of Monsters' volgt de heldhaftige pogingen van het crypto-zoölogische agentschap, Monarch
+            genaamd, dat het opneemt tegen een reeks reusachtige monsters. Onder hen bevinden zich de machtige Godzilla,
+            Mothra, Rodan en de aartsvijand, de driekoppige King Godirah. Terwijl de wezens allemaal strijden voor
+            suprematie, hangt het voortbestaan van de mensheid aan een zijden draadje.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt3741700/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Michael Dougherty</span> </td>
+          <td id="info2">Cast: <span id="cast">Kyle Chandler, Vera Farmiga, Millie Bobby Brown, Ken Watanabe</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/greta.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Greta:</h3>
+            <span>Duur: </span> 98 minuten <br>
+            <span>Genre: </span> Drama, thriller <br><br>
+            De jonge naïeve Frances wil het helemaal maken in New York. Wanneer ze een verloren handtas terugvindt wil
+            ze deze teruggeven aan de eigenaar, zijnde de pianiste Greta. Deze voelt zich erg eenzaam en is maar al te
+            blij om gezelschap te hebben. Frances heeft net haar moeder verloren en voelt zich vervreemd van haar vader
+            terwijl Greta haar echtgenoot heeft verloren en haar dochter ver weg van haar woont. Frances en Greta
+            sluiten vriendschap, maar dit gaat al snel de sinistere kant op.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt2639336/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Neil Jordan</span> </td>
+          <td id="info2">Cast: <span id="cast">Chloë Grace Moretz, Isabelle Huppert, Maika Monroe, Colm Feore</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/johnwick.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">John Wick 3: Parabellum:</h3>
+            <span>Duur: </span> 143 minuten <br>
+            <span>Genre: </span> Actie, misdaad, thriller<br><br>
+            John Wick is terug. Met een bedrag van 14 miljoen dollar op zijn hoofd en een leger huurmoordenaars achter
+            zich aan. Na het doden van een lid van het internationale moordenaarsgilde The High Table op de neutrale
+            grond van het Continental Hotel is John excommunicado verklaard. Zijn lidmaatschap wordt opgeheven en hij
+            heeft geen toegang meer tot de diensten en de leden van de geheime criminele gemeenschap. Met slechts één
+            uur voorsprong en de meest meedogenloze premiejagers van de wereld achter zich aan vecht John zich door New
+            York in een poging te overleven.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6146586/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Chad Stahelski</span> </td>
+          <td id="info2">Cast: <span id="cast">Keanu Reeves, Halle Berry, Ian McShane, Laurence Fishburne</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/ma.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Ma:</h3>
+            <span>Duur: </span> 99 minuten <br>
+            <span>Genre: </span> Horror, thriller <br><br>
+            Everybody’s welcome at Ma’s. But good luck getting home safe. Oscarwinnaar Octavia Spencer speelt Sue Ann,
+            die een rustig stadje in Ohio woont. Op een dag vraagt Maggie (Diana Silvers, Glass), een tiener die net in
+            de stad is komen wonen, aan Sue Ann om wat drank voor haar en haar vrienden te kopen. Ze biedt de tieners de
+            kans om bij haar thuis in de kelder te komen drinken. Maar ze heeft een paar strenge huisregels: Niet
+            vloeken. Nooit naar boven gaan. En noem haar “Ma.” Na diverse feestjes blijkt de gastvrijheid van Ma in een
+            obsessie te veranderen en wat volgt is een afgrijselijke nachtmerrie.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt7958736/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Tate Taylor</span> </td>
+          <td id="info2">Cast: <span id="cast">Octavia Spencer, Juliette Lewis, Missi Pyle, Luke Evans</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/rocketman.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Rocketman:</h3>
+            <span>Duur: </span> 121 minuten <br>
+            <span>Genre: </span> Biografie, drama, musical <br><br>
+            Taron Egerton is Sir Elton John in de nieuwe bioscoopfilm Rocketman, een musical fantasy gebaseerd op het
+            ongecensureerde verhaal over Sir Elton John in het begin van zijn muziekcarrière.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt2066051/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Dexter Fletcher</span> </td>
+          <td id="info2">Cast: <span id="cast">Taron Egerton, Jamie Bell, Richard Madden, Bryce Dallas Howard</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/biggestlittlefarm.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">The biggest little farm:</h3>
+            <span>Duur: </span> 89 minuten <br>
+            <span>Genre: </span> Documentaire<br><br>
+            The Biggest Little Farm is een inspirerend verhaal over het verwezenlijken van je dromen en het bewijs dat
+            duurzaam leven mogelijk is. Cameraman John Chester en zijn vrouw Molly wonen in een klein appartement in Los
+            Angeles. Molly is culinair recensent en chef-kok en droomt er al jaren van om een duurzame boerderij te
+            beginnen waar ze haar eigen producten kan verbouwen. Hun nieuwe huisgenoot, de innemende hond Todd, geeft
+            hen een duwtje in de goede richting en ze besluiten hun wens te realiseren. Met de hulp van investeerders
+            schaffen ze een stuk grond aan buiten de stad. Het dorre land wordt volgens een ingenieus systeem bebouwd en
+            met de komst van varkens, eenden en kippen wordt hun droom langzaam werkelijkheid. Ze worden geconfronteerd
+            met weerbarstige natuurverschijnselen, maar ontdekken ook dat de kracht van de natuur de remedie kan zijn
+            bij het bestrijden van diverse plagen, waardoor pesticides overbodig zijn. De documentaire zit vol met
+            adembenemende beelden van flora en fauna, waaronder Emma, het varken, wie je hart zal stelen. The Biggest
+            Little Farm is een hoopvol sprookje over hoe de mens in harmonie met de natuur kan leven.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt8969332/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">John Chester</span> </td>
+          <td id="info2">Cast: <span id="cast">John Chester, Molly Chester</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/wonderpark.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Wonder park:</h3>
+            <span>Duur: </span> 93 minuten <br>
+            <span>Genre: </span> Animatie, avontuur, komedie<br><br>
+            De fantasievolle June ontdekt een pretpark genaamd Wonderland, dat verborgen zit in het bos. Het park
+            beschikt over leuke glijbanen en pratende dieren. June ontdekt al snel dat het park uit haar eigen fantasie
+            is ontsproten en dat ze de enige hoop is, samen met de dieren, om deze magische plek te redden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6428676/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">David Feiss</span> </td>
+          <td id="info2">Cast: <span id="cast">Brianna Denski, Matthew Broderick, Jennifer Garner, Sofia Mali</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/x-men.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">X-men: Dark phoenix 2D:</h3>
+            <span>Duur: </span> 113 minuten <br>
+            <span>Genre: </span> Actie, sci-fi <br><br>
+            Jean Gray begint ongelooflijke krachten te ontwikkelen die haar doen veranderen in de kwaadaardige Dark
+            Phoenix. Nu moeten de X-Men beslissen of het leven van één teamlid meer waard is dan alle mensen die op de
+            wereld wonen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6565702/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Simon Kinberg</span> </td>
+          <td id="info2">Cast: <span id="cast">Sophie Turner, James McAvoy, Michael Fassbender, Jennifer Lawrence</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/x-men.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">X-men: Dark phoenix 3D:</h3>
+            <span>Duur: </span> 113 minuten <br>
+            <span>Genre: </span> Actie, sci-fi <br><br>
+            Jean Gray begint ongelooflijke krachten te ontwikkelen die haar doen veranderen in de kwaadaardige Dark
+            Phoenix. Nu moeten de X-Men beslissen of het leven van één teamlid meer waard is dan alle mensen die op de
+            wereld wonen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6565702/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Simon Kinberg</span> </td>
+          <td id="info2">Cast: <span id="cast">Sophie Turner, James McAvoy, Michael Fassbender, Jennifer Lawrence</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

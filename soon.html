@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Cinefile</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Films</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="now.html">Nu in de bioscoop</a>
+              <a class="dropdown-item" href="soon.html">Wordt verwacht</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html">Programma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#buy">Ticket & go</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="collapse col-12" id="buy">
+      <form action="">
+        <div>
+          <label for="date">DAG : </label>
+          <select name="date" id="date">
+            <option value="" class="date" selected>Selecteer</option>
+            <option value="1">Maandag 10 juni</option>
+            <option value="2">Dinsdag 11 juni</option>
+            <option value="3">Woensdag 12 juni</option>
+            <option value="4">Donderdag 13 juni</option>
+            <option value="5">Vrijdag 14 juni</option>
+            <option value="6">Zaterdag 15 juni</option>
+            <option value="7">Zondag 16 juni</option>
+          </select>
+        </div>
+        <div>
+          <label for="film">FILM: </label>
+          <select name="film" id="film">
+            <option value="" selected>Selecteer</option>
+            <option value="1">Gloria Bell</option>
+            <option value="2">A dog's journey</option>
+            <option value="3">Aladdin NV</option>
+            <option value="4">Aladdin OV</option>
+            <option value="5">Avengers: Endgame</option>
+            <option value="6">Corgi</option>
+            <option value="7">Detective Pikachu NV</option>
+            <option value="8">Detective Pikachu OV</option>
+            <option value="9">Dumbo NV</option>
+            <option value="10">Godzilla II: King of the monsters</option>
+            <option value="11">Greta</option>
+            <option value="12">John Wick 3</option>
+            <option value="13">Ma</option>
+            <option value="14">Rocketman</option>
+            <option value="15">Biggest little farm</option>
+            <option value="16">Wonder park</option>
+            <option value="17">X-men: Dark Phoenix 2D</option>
+            <option value="18">X-men: Dark Phoenix 3D</option>
+            <option value="19">The evil dead</option>
+            <option value="20">Friday the 13th</option>
+            <option value="21">Halloween</option>
+            <option value="22">The last house on the left</option>
+            <option value="23">Poltergeist/option>
+            <option value="24">Sleepaway camp</option>
+            <option value="25">Suspiria</option>
+            <option value="26">Black christmas</option>
+          </select>
+        </div>
+        <div>
+          <label for="time">TIJD: </label>
+          <select name="time" id="time">
+            <option value="" selected>Selecteer</option>
+            <option value="1">14u</option>
+            <option value="2">17u</option>
+            <option value="3">20u</option>
+            <option value="4">23u</option>
+          </select>
+        </div>
+        <div>
+          <button class="btn" type="submit">Buy</button>
+        </div>
+
+      </form>
+    </div>
+
+    <table id="table" class="table ">
+      <tbody>
+        <tr>
+          <th id="head">
+            <img src="images/childsplay.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Child's play:</h3>
+            <span>Duur: </span> 120 minuten <br>
+            <span>Genre: </span> Horror, komedie <br>
+            <span>Verwacht: </span> Vanaf 19 juni <br><br>
+            Een moeder geeft haar zoon een speelgoedpop voor zijn verjaardag, maar ze is zich niet bewust van het
+            sinistere karakter...
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt8663516/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Lars Klevberg</span></td>
+          <td id="info2">Cast: <span id="cast">Aubrey Plaza, Brian Tyree Henry, Gabriel Bateman, David Lewis</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/mib.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Men in black international:</h3>
+            <span>Duur: </span> 115 minuten <br>
+            <span>Genre: </span> Actie, komedie, sci-fi <br>
+            <span>Verwacht: </span> Vanaf 19 juni <br><br>
+            The world's not going to save itself. The Men in Black hebben altijd de aarde beschermd tegen het uitschot
+            van het universum. In deze nieuwe spectaculaire actiefilm krijgen agent H (Chris Hemsworth) en agent M
+            (Tessa Thompson) te maken met de grootste en meest wereldwijde dreiging tot nu toe: een mol in de Men in
+            Black organisatie.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt2283336/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">F. Gary Gray</span></td>
+          <td id="info2">Cast: <span id="cast">Chris Hemsworth, Tessa Thompson, Liam Neeson, Rebecca Ferguson</span>
+          </td>
+          <cast>
+        <tr>
+          <th id="head">
+            <img src="images/toystory.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Toy story 4 NV/OV:</h3>
+            <span>Duur: </span> 89 minuten <br>
+            <span>Genre: </span> Animatie, avontuur, familiefilm, komedie <br>
+            <span>Verwacht: </span> Vanaf 26 juni <br><br>
+            Woody en Bo Peep zijn stapelverliefd op elkaar en leven gelukkig samen. Dit maakt het des te meer pijnlijk
+            wanneer zij plotseling wordt weggegeven. Hierop start Woody samen met zijn kameraad Buzz Lightyear een
+            zoektocht om haar terug te krijgen. De cowboy en de astronaut beleven een avontuur vol opwinding en gevaar,
+            want Bo Peep blijkt niet zo makkelijk te vinden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt1979376/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Josh Cooley</span></td>
+          <td id="info2">Cast: <span id="cast">Tom Hanks, Tim Allen, Annie Potts, Joan Cusack</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/booksmart.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Booksmart:</h3>
+            <span>Duur: </span> 105 minuten <br>
+            <span>Genre: </span> Komedie <br>
+            <span>Verwacht: </span>Vanaf 26 juni <br><br>
+            Getting Straight A’s. Giving Zero F’s. De beste vriendinnen Amy en Molly staan aan de vooravond van hun
+            diploma-uitreiking wanneer ze beseffen dat ze de afgelopen jaren alleen maar in de bibliotheek hebben
+            gezeten en veel te weinig hebben gefeest. Ze komen er achter dat hun klasgenoten wél de bloemetjes buiten
+            hebben gezet en toch zijn toegelaten op dezelfde universiteiten. Ze besluiten iedereen te laten zien dat zij
+            ook weten wat het is om te feesten! Nu moeten de meiden er alleen wel achter zien te komen waar het
+            examenfeest is waar ze moeten zijn, want dat is informatie die ze niet in hun studieboeken kunnen vinden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt1489887/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Olivia Wilde</span></td>
+          <td id="info2">Cast: <span id="cast">Kaitlyn Dever, Beanie Feldstein, Mason Gooding, Skyler Gisondo</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/brightburn.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Brightburn:</h3>
+            <span>Duur: </span> 90 minuten <br>
+            <span>Genre: </span> Drama, Sci-fi, thriller <br>
+            <span>Verwacht: </span>Vanaf 26 juni <br><br>
+            Een man en vrouw kunnen hun kinderwens niet vervullen, maar vinden op een dag een baby. Ze noemen hem
+            Brendan en voeden op hem. Jaren later wordt het duidelijk dat Brendan geen normale jongen is en over
+            bovennatuurlijke krachten beschikt. Een gevecht om te overleven begint.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt7752126/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">David Yarovesky</span></td>
+          <td id="info2">Cast: <span id="cast">Elizabeth Banks, David Denman, Meredith Hagner, Matt Jones</span></td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/annabelle.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Annabelle comes home:</h3>
+            <span>Duur: </span> 106 minuten <br>
+            <span>Genre: </span> Horror <br>
+            <span>Verwacht: </span>Vanaf 3 juli <br><br>
+            Annabelle Comes Home is het derde deel van de succesvolle New Line Cinema Annabelle- filmreeks met in de
+            hoofdrol de bezeten pop uit The Conjuring Universe. Vastbesloten om Annabelle ervan te weerhouden om nog
+            meer verwoesting aan te richten, brengen de demonologen Ed en Lorraine Warren de bezeten pop naar een
+            afgesloten kamer met bovennatuurlijke objecten in hun huis. Annabelle wordt opgesloten achter heilig glas,
+            een glazen vitrine gezegend door een priester. Maar er volgt een onheilspellende nacht vol afschuw als
+            Annabelle de boze geesten in de kamer doet ontwaken, die allemaal hun zinnen hebben gezet op een nieuw
+            doelwit – de tienjarige dochter van de Warrens, Judy, en haar vrienden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt8350360/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Gary Dauberman</span> </td>
+          <td id="info2">Cast: <span id="cast">Mckenna Grace, Madison Iseman, Katie Sarife, Patrick Wilson</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/spiderman.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Spider-Man: far from home 2D/3D:</h3>
+            <span>Duur: </span> 129 minuten <br>
+            <span>Genre: </span> Actie, avontuur, sci-fi <br>
+            <span>Verwacht: </span>Vanaf 3 juli <br><br>
+            'Spider-Man: Far from Home' speelt zich af na de gebeurtenissen van 'Avengers: Endgame'. Peter Parker gaat
+            met zijn vrienden op zomervakantie door Europa. Maar tijdens de vakantie blijkt dat hij zijn vrienden moet
+            redden van een nieuwe vijand, Mysterio genaamd.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6320628/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Jon Watts</span> </td>
+          <td id="info2">Cast: <span id="cast">Tom Holland, Jake Gyllenhaal, Zendaya, Samuel L. Jackson</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/pets.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Huisdiergeheimen 2 NV/OV:</h3>
+            <span>Duur: </span> 92 minuten <br>
+            <span>Genre: </span> Animatie, familiefilm, avontuur, komedie <br>
+            <span>Verwacht: </span>Vanaf 3 juli <br><br>
+            Secret Life Of Pets 2 is de nieuwe vrolijke animatiefilm van Illumination Entertainment en Universal
+            Pictures, de makers van De Grinch, Minions en Sing. Het is het vervolg op de grote bioscoophit uit 2016 die
+            onthulde wat onze huisdieren uitspoken als de baasjes van huis zijn. Opnieuw volgen wij de hilarische
+            avonturen van de trouwe terriër Max, de slome kat Chloe, het snoezige dwergkeeshondje Gidget, mopshond en
+            lady-killer Mel, de knorrige bastaard Duke, de onnozele cavia Norbert en het schattige maar gestoorde
+            konijntje Sneeuwbal.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt5113040/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Chris Renaud</span> </td>
+          <td id="info2">Cast: <span id="cast">Patton Oswalt, Eric Stonestreet, Kevin Hart, Jenny Slate</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/lionking.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">The lion king (live action) NV/OV:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Animatie, avontuur, familiefilm <br>
+            <span>Verwacht: </span>Vanaf 17 juli <br><br>
+            Simba is een jonge leeuw en zoon van leeuwenkoning Mufasa. Hij kijkt op tegen zijn vader en neemt zijn
+            koninklijke bestemming ter harte. Dat zint Mufasa's jaloerse broer Scar absoluut niet en smeedt samen met
+            een groep hyena's een plan om zowel Mufasa als Simba uit de weg te ruimen, zodat hij zelf de macht kan
+            grijpen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt6105098/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Jon Favreau</span> </td>
+          <td id="info2">Cast: <span id="cast">Donald Glover, Beyoncé Knowles, James Earl Jones, Chiwetel Ejiofor</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/hustle.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">The hustle:</h3>
+            <span>Duur: </span> 94 minuten <br>
+            <span>Genre: </span> Komedie <br>
+            <span>Verwacht: </span>Vanaf 17 juli <br><br>
+            De elegante Josephine (Anne Hathaway) leert de nog amateuristische Penny (Rebel Wilson) de kneepjes van het
+            oplichtersvak. Samen besluiten ze om de foute mannen die hen hebben belazerd te grazen te nemen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt1298644/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Chris Addison</span> </td>
+          <td id="info2">Cast: <span id="cast">Rebel Wilson, Anne Hathaway, Alex Sharp, Ingrid Oliver</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/uglydolls.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Ugly dolls:</h3>
+            <span>Duur: </span> 87 minuten <br>
+            <span>Genre: </span> Animatie, familiiefilm, komedie <br>
+            <span>Verwacht: </span>Vanaf 31 juli <br><br>
+            Moxy leeft een gelukkig bestaan in het dorpje Uglyville. Avontuurlijk ingesteld wil ze met haar vrienden Ox,
+            Wage, Babo, Lucky Bat en Ugly Dog de wereld verkennen. Ze komen terecht op een plek genaamd Perfection waar
+            perfecte poppen wonen onder het leiderschap van Lou. Hij is de perfectie zelve en traint de inwoners om zich
+            op een bepaalde voorgeschreven manier te gedragen. Dit met het doel om de menselijke wereld te kunnen
+            betreden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt1946502/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Kelly Asbury</span> </td>
+          <td id="info2">Cast: <span id="cast">Kelly Clarkson, Nick Jonas, Janelle Monáe, Blake Shelton</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/mutants.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">The new mutants:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Actie, avontuur, horror, sci-fi <br>
+            <span>Verwacht: </span>Vanaf 31 juli <br><br>
+            Vijf jonge mutanten ontdekken nog maar net hun speciale krachten, terwijl ze worden vastgehouden in een
+            geheime locatie tegen hun wil. Ze laten het er niet bij en proberen met hun krachten te ontsnappen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt4682266/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Josh Boone</span> </td>
+          <td id="info2">Cast: <span id="cast">Anya Taylor-Joy, Maisie Williams, Charlie Heaton, Blu Hunt</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/artemisfowl.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Artemis Fowl:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Avontuur, fantasy <br>
+            <span>Verwacht: </span>Vanaf 7 augustus <br><br>
+            Artemis Fowl, het 12-jarige genie, afkomstig uit een lange lijn van criminele meesterbreinen, belandt in een
+            strijd van kracht en sluwheid tegen een machtig, verborgen ras van feeën die mogelijk achter de verdwijning
+            van zijn vader zit.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt3089630/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Kenneth Branagh</span> </td>
+          <td id="info2">Cast: <span id="cast">Ferdia Shaw, Lara McDonnell, Judi Dench, Josh Gad</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/playmobile.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Playmobil: The movie NV/OV:</h3>
+            <span>Duur: </span> 110 minuten <br>
+            <span>Genre: </span> Animatie, familiefilm <br>
+            <span>Verwacht: </span>Vanaf 7 augustus <br><br>
+            Marla's jongere broer Charlie verdwijnt voor haar ogen in de wereld van Playmobil. Ze ziet geen andere optie
+            dan mee te reizen naar dit bizarre universum waarin ze een zoektocht begint. Tijdens haar avontuur ontmoet
+            ze diverse figuren die haar meehelpen Charlie terug te vinden.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt4199898/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Lino DiSalvo</span> </td>
+          <td id="info2">Cast: <span id="cast">Anya Taylor-Joy, Daniel Radcliffe, Kenan Thompson, Gabriel Bateman</span>
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/onceupon.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Once upon a time in Hollywood:</h3>
+            <span>Duur: </span> 165 minuten <br>
+            <span>Genre: </span> Drama, komedie, misdaad, thriller <br>
+            <span>Verwacht: </span>Vanaf 14 juli <br><br>
+            De zomer van 1969. Een tv-acteur, Rick Dalton genaamd, heeft slechts in een succesvolle westernserie
+            gespeeld en verlangt naar meer succes. Cliff Booth, zijn rechterhand en stuntman, verlangt echter ook naar
+            een filmcarrière. Het verhaal van Dalton doorkruist de moord op zijn buurvrouw Sharon Tate en vier van haar
+            vrienden door de Charles Mansons sekte.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt7131622/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Quentin Tarantino</span> </td>
+          <td id="info2">Cast: <span id="cast">Leonardo DiCaprio, Brad Pitt, Margot Robbie, Al Pacino</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/it.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">It: Chapter two:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Horror <br>
+            <span>Verwacht: </span>Vanaf 18 september <br><br>
+            Het kwaad huist zich opnieuw in het stadje Derry als regisseur Andy Muschietti in It Chapter Two de Losers
+            Club – jong en oud – weer bij elkaar brengt naar waar het allemaal begon. De film is Muschietti’s opvolger
+            van de in 2017 veelgeprezen en wereldwijde hit It, die meer dan 700 miljoen dollar opbracht. De
+            genreoverstijgende film werd een cultureel fenomeen en is de grootste horrorfilm aller tijden. Omdat elke 27
+            jaar het kwaad terugkeert naar het stadje Derry, in de Amerikaanse staat Maine, brengt It Chapter Twode
+            personages – die allen hun eigen weg zijn gegaan – weer bij elkaar als volwassenen, bijna drie decennia na
+            de gebeurtenissen van de eerste film.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt7349950/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Andy Muschietti</span> </td>
+          <td id="info2">Cast: <span id="cast">James McAvoy, Jessica Chastain, Jay Ryan, Bill Hader</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/rambo.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Rambo V: The last blood:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Actie <br>
+            <span>Verwacht: </span>Vanaf 18 september <br><br>
+            John Rambo is met pensioen en woont op een boerderij in de Verenigde Staten. Op een dag hoort hij van Maria,
+            een oude familievriendin en vastgoedmanager, dat zijn dochter is ontvoerd door een Mexicaans drugskartel. Al
+            snel komt John terecht in de gewelddadige wereld van de sekshandel. Hij werkt samen met een journalist,
+            wiens halfzus ook is ontvoerd, en moet al zijn vaardigheden inzetten om de meisjes te redden en een
+            kwaadaardige misdaadbaas neer te halen.
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt1206885/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">Adrian Grunberg</span> </td>
+          <td id="info2">Cast: <span id="cast">Sylvester Stallone, Paz Vega, Joaquín Cosio, Óscar Jaenada</span> </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <img src="images/scary.jpg" alt="">
+          </th>
+          <td colspan="2" id="info">
+            <h3 id="title3">Scary stories to tell in the dark:</h3>
+            <span>Duur: </span> - <br>
+            <span>Genre: </span> Horror <br>
+            <span>Verwacht: </span>Vanaf 25 september <br><br>
+            Stella is een jong meisje dat nog steeds wordt achtervolgd door de verdwijning van haar moeder op de avond
+            van Halloween - een incident waarvan ze vermoedt dat haar vader meer weet dan dat hij toegeeft. Jaren later
+            zijn Stella en haar vrienden betrokken bij een Halloween-grap die verkeerd afloopt. Maar zijn ze echt in de
+            fout gegaan of was het het werk van een wraakzuchtige geest - een vrouwelijke geest die haar enge verhalen
+            gebruikt om te jagen op een groep tieners, wanneer ze beginnen met het onderzoeken van de verdwijning van
+            meerdere kinderen?
+          </td>
+        </tr>
+        <tr>
+          <th id="head">
+            <button type="button" id="btn3"><a id="b" href="https://www.imdb.com/title/tt3387520/"
+                target="blank">imdb</a></button>
+          </th>
+          <td id="info2">Regie: <span id="dir">André Ovredal</span> </td>
+          <td id="info2">Cast: <span id="cast">Zoe Colletti, Michael Garza, Austin Abrams, Gabriel Rush</span> </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

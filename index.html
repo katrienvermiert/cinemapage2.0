@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Cinefile</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Films</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="now.html">Nu in de bioscoop</a>
+              <a class="dropdown-item" href="soon.html">Wordt verwacht</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html">Programma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#buy">Ticket & go</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="collapse col-12" id="buy">
+      <form action="">
+        <div>
+          <label for="date">DAG : </label>
+          <select name="date" id="date">
+            <option value="" class="date" selected>Selecteer</option>
+            <option value="1">Maandag 10 juni</option>
+            <option value="2">Dinsdag 11 juni</option>
+            <option value="3">Woensdag 12 juni</option>
+            <option value="4">Donderdag 13 juni</option>
+            <option value="5">Vrijdag 14 juni</option>
+            <option value="6">Zaterdag 15 juni</option>
+            <option value="7">Zondag 16 juni</option>
+          </select>
+        </div>
+        <div>
+          <label for="film">FILM: </label>
+          <select name="film" id="film">
+            <option value="" selected>Selecteer</option>
+            <option value="1">Gloria Bell</option>
+            <option value="2">A dog's journey</option>
+            <option value="3">Aladdin NV</option>
+            <option value="4">Aladdin OV</option>
+            <option value="5">Avengers: Endgame</option>
+            <option value="6">Corgi</option>
+            <option value="7">Detective Pikachu NV</option>
+            <option value="8">Detective Pikachu OV</option>
+            <option value="9">Dumbo NV</option>
+            <option value="10">Godzilla II: King of the monsters</option>
+            <option value="11">Greta</option>
+            <option value="12">John Wick 3</option>
+            <option value="13">Ma</option>
+            <option value="14">Rocketman</option>
+            <option value="15">Biggest little farm</option>
+            <option value="16">Wonder park</option>
+            <option value="17">X-men: Dark Phoenix 2D</option>
+            <option value="18">X-men: Dark Phoenix 3D</option>
+            <option value="19">The evil dead</option>
+            <option value="20">Friday the 13th</option>
+            <option value="21">Halloween</option>
+            <option value="22">The last house on the left</option>
+            <option value="23">Poltergeist/option>
+            <option value="24">Sleepaway camp</option>
+            <option value="25">Suspiria</option>
+            <option value="26">Black christmas</option>
+          </select>
+        </div>
+        <div>
+          <label for="time">TIJD: </label>
+          <select name="time" id="time">
+            <option value="" selected>Selecteer</option>
+            <option value="1">14u</option>
+            <option value="2">17u</option>
+            <option value="3">20u</option>
+            <option value="4">23u</option>
+          </select>
+        </div>
+        <div>
+          <button class="btn" type="submit">Buy</button>
+        </div>
+
+      </form>
+    </div>
+    <div class="col-12">
+      <h1>Nieuw deze week!</h1>
+
+      <div class="row" id="row1">
+        <div class="pic1 col-md-4 mt-4 ml-4 ml-md-0">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="images/aladdin.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Aladdin</h4> <br>
+              <p class="card-text">Originele versie en nederlandstalige versie</p>
+              <button type="button" id="btn3"><a id="b" href="program.html">programma</a></button>
+              <button type="button" id="btn3"><a id="b" href="now.html">informatie</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="pic2 col-md-4 mt-4 ml-4 ml-md-0">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="images/det.jpeg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Detectiv Pikachu</h4> <br>
+              <p class="card-text">Originele versie en nederlandstalige versie</p>
+              <button type="button" id="btn3"><a id="b" href="program.html">programma</a></button>
+              <button type="button" id="btn3"><a id="b" href="now.html">informatie</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="pic3 col-md-4  mt-4 ml-4 ml-md-0">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="images/dumbo.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Dumbo</h4> <br>
+              <p class="card-text">Originele versie en nederlandstalige versie</p>
+              <button type="button" id="btn3"><a id="b" href="program.html">programma</a></button>
+              <button type="button" id="btn3"><a id="b" href="now.html">informatie</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="title2">Special events</h1>
+    <div class="horror col-12">
+      <h2> WEEKEND OF HORROR</h2>
+      <P>14 - 16 juni</P>
+      <div class="row" id="row1">
+        <figure class="col-6 mt-3 col-md-3 mt-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/evildead.jpg" class="img-fluid" style="width: 250px; height: 350px">
+            <div class="overlay">
+              <h2>The evil dead (1981)</h2>
+              <p id="summary">Vijf jongeren gaan naar een afgelegen vakantiehuisje in de bossen. Ze vinden een vreemd
+                boek met een bandrecorder ernaast waar enkele passages uit het boek zijn vertaald. Ze spelen de band af
+                wat tot gevolg heeft dat er een demonische kracht vrijkomt die ze één voor één overneemt. Niemand is
+                meer veilig en Ash (Campbell) moet tegen z'n eigen vrienden vechten voor z'n leven. <br><br>Duur: 96
+                minuten </p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 mt-3 col-md-3 mt-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/friday2.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Friday the 13th (1980)</h2>
+              <p>Camp 'Crystal Lake' is al meer dan twintig jaar verlaten ten gevolge van een aantal afschuwelijke
+                moorden die daar gepleegd zijn én die onopgelost gebleven zijn. Een jonge man heeft het land gekocht met
+                de bedoeling het kamp te heropenen en huurt zeven jonge mensen in om hem met de voorbereiding te helpen.
+                De lokale dorpsgek Ralph waarschuwt hen dat er een 'doodsvloek' op het kamp <br><br> Duur: 95 minuten
+              </p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3 mt-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/halloween.png" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Halloween (1978)</h2>
+              <p>Halloween 1963, De 6-jarige Michael Myers vermoordt zijn oudere zus. Hij wordt opgenomen in een
+                psychiatrische kliniek. Hij is nu 21 en er moet bepaald worden of hij vrijgelaten mag worden. De dokter
+                die zich al die jaren met hem bezighield vindt dat Michael nooit vrij mag komen. Maar Michael wacht het
+                onderzoek niet af en ontsnapt. Hij keert terug naar huis waar hij doorgaat met moorden tijdens
+                Halloween. <br><br>Duur: 101 minuten</p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3 mt-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/lasthouse.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>The last house on the left (1972)</h2>
+              <p>Mari Collingwood en haar vriendin Phyllis Stone gaan naar een concert en zijn op zoek naar wiet. Ze
+                komen in contact met Junior Stillo, de zoon van de voortvluchtige crimineel Krug. Hij neemt hen mee naar
+                zijn gewelddadige vader en twee andere gevaarlijke gekken; Weasel en Sadie. Verkrachting, foltering en
+                moord volgen. <br><br>Duur: 91 minuten</p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/poltergeist2.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Poltergeist (1982)</h2>
+              <p>Het rustige leven van de familie Freeling wordt verstoord door geesten. Op het eerste gezicht lijken de
+                geesten vriendelijk te zijn: ze verplaatsen objecten als amusement voor het gezin. Maar dan worden ze
+                gemeen en beginnen ze het gezin te terroriseren. Ze gaan zelfs zover dat ze hun dochter kidnappen. Haar
+                vader roept de hulp in van klopgeestspecialisten. <br><br>Duur: 114 minuten</p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/sleepaway.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Sleepaway camp (1983)</h2>
+              <p>Na een vreselijk ongeluk overleeft te hebben gaat Angela met haar neefje Ricky op zomerkamp. De groep
+                tieners heeft het enorm naar de zin en vrijen, drinken en feesten er rustig op los. De sfeer verandert
+                echter op slag als meerdere tieners op gruwelijke wijze worden vermoord door een onbekende moordenaar.
+                <br><br>Duur: 88 minuten</p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/susperia.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Suspiria (1977)</h2>
+              <p>Gestileerde horror over de Amerikaanse balletstudente Suzy Bannion, die afreist naar een Duitse
+                balletacademie in het Zwarte Woud. Daar vallen al snel twee dodelijke slachtoffers. Suzy ontdekt dat de
+                academie een wel heel bizarre geschiedenis kent. <br><br>Duur: 92 minuten</p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-6 col-md-3">
+          <div class="hovereffect">
+            <img alt="picture" src="images/blackchristmas.jpg" class="img-fluid" style="width: 250px; height: 350px" />
+            <div class="overlay">
+              <h2>Black christmas (1974)</h2>
+              <p>Een studentenhuis voor meisjes wordt, tijdens kerst, geterroriseerd door een hijger. Als er een meisje
+                uit het huis verdwijnt, begint men een zoekactie. Maar dan treffen ze een ander lijk aan. Vervolgens
+                probeert de politie er alles aan te doen om de hijger op te sporen. <br><br>Duur: 98 minuten</p>
+            </div>
+          </div>
+        </figure>
+        <button type="button" id="btn2"><a id="c" href="schedule.html">programma</a></button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div id="footer" class="col-12">
+    <div class="row" id="row1">
+      <div class="col-12 col-md-4">
+        <ul id="list">
+          <li><a href="#">Over ons</a> </li>
+          <li><a href="#">Contact</a> </li>
+          <li><a href="#">Events</a> </li>
+          <li><a href="#">Pers</a> </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h5>Social</h5>
+        <a href="#"><i id="icon1" class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i id="icon2" class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul id="list">
+          <li><a href="#">Privacybeleid</a> </li>
+          <li><a href="#">Cookiebeleid</a> </li>
+          <li><a href="#">Voorwaarden</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

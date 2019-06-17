@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Cinefile</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+            </button>
+                    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto"> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Films</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="now.html">Nu in de bioscoop</a>
+                    <a class="dropdown-item" href="soon.html">Wordt verwacht</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="program.html">Programma</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-toggle="collapse" data-target="#buy">Ticket & go</a>
+                    </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="collapse col-12" id="buy">
+            <form action="">
+              <div>
+                <label for="date">DAG : </label>
+                <select name="date" id="date">
+                  <option value="" class="date" selected>Selecteer</option>
+                  <option value="1">Maandag 10 juni</option>
+                  <option value="2">Dinsdag 11 juni</option>
+                  <option value="3">Woensdag 12 juni</option>
+                  <option value="4">Donderdag 13 juni</option>
+                  <option value="5">Vrijdag 14 juni</option>
+                  <option value="6">Zaterdag 15 juni</option>
+                  <option value="7">Zondag 16 juni</option>
+                </select>
+              </div>
+              <div>
+                <label for="film">FILM: </label>
+                <select name="film" id="film">
+                  <option value="" selected>Selecteer</option>
+                  <option value="1">Gloria Bell</option>
+                  <option value="2">A dog's journey</option>
+                  <option value="3">Aladdin NV</option>
+                  <option value="4">Aladdin OV</option>
+                  <option value="5">Avengers: Endgame</option>
+                  <option value="6">Corgi</option>
+                  <option value="7">Detective Pikachu NV</option>
+                  <option value="8">Detective Pikachu OV</option>
+                  <option value="9">Dumbo NV</option>
+                  <option value="10">Godzilla II: King of the monsters</option>
+                  <option value="11">Greta</option>
+                  <option value="12">John Wick 3</option>
+                  <option value="13">Ma</option>
+                  <option value="14">Rocketman</option>
+                  <option value="15">Biggest little farm</option>
+                  <option value="16">Wonder park</option>
+                  <option value="17">X-men: Dark Phoenix 2D</option>
+                  <option value="18">X-men: Dark Phoenix 3D</option>
+                  <option value="19">The evil dead</option>
+                  <option value="20">Friday the 13th</option>
+                  <option value="21">Halloween</option>
+                  <option value="22">The last house on the left</option>
+                  <option value="23">Poltergeist/option>
+                  <option value="24">Sleepaway camp</option>
+                  <option value="25">Suspiria</option>
+                  <option value="26">Black christmas</option>
+                </select>
+              </div>
+              <div>
+                <label for="time">TIJD: </label>
+                <select name="time" id="time">
+                  <option value="" selected>Selecteer</option>
+                  <option value="1">14u</option>
+                  <option value="2">17u</option>
+                  <option value="3">20u</option>
+                  <option value="4">23u</option>
+                </select>
+              </div>
+              <div>
+                <button class="btn" type="submit">Buy</button>
+              </div>
+      
+            </form>
+          </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Mon')" id="defaultOpen">Ma 10/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Tue')">Di 11/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Wed')">Wo 12/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Tue')">Do 13/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Fri')">Vr 14/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Sat')">Za 15/06</button>
+            <button class="tablinks" onclick="openCity(event, 'Sun')">Zo 16/06</button>
+          </div>
+          
+       
+          <div id="Mon" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                      <th id="th" scope="col">Film</th>
+                      <th id="th" scope="col">14h</th>
+                      <th id="th" scope="col">17h</th>
+                      <th id="th" scope="col">20h</th>
+                      <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+          
+          <div id="Tue" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+          <div id="Wed" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td></td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td></td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+          <div id="Thu" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+          <div id="Fri" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+          <div id="Sat" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+          <div id="Sun" class="tabcontent">
+              <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                        <th id="th" scope="col">Film</th>
+                        <th id="th" scope="col">14h</th>
+                        <th id="th" scope="col">17h</th>
+                        <th id="th" scope="col">20h</th>
+                        <th id="th" scope="col">22h</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Gloria Bell</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">A dog's journey</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin NV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aladdin OV</th>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Avengers: Endgame</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Corgi</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu NV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detective Pikachu OV</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dumbo NV</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Godzilla II: King of the monsters</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Greta</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">John Wick 3</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ma</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rocketman</th>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biggest little farm</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wonder park</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 2D</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">X-men: Dark Phoenix 3D</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+
+
+        
+  </div>
+    
+
+         
+       
+
+
+    
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
